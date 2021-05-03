@@ -1,0 +1,15 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: pakkasran
+
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        format-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
